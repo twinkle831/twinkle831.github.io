@@ -54,36 +54,25 @@
             <h1 class="loc">Delhi, India</h1>
             <h1 class="loc">23° C <br>Haze</h1>
             <div  id="wPanel">
-                <div class="curW">Precepitation : 0.0mm</div>
                 <div class="curW">Wind Speed : 5.0km/h</div>
                 <div class="curW">Humidity : 43.0%</div>
                 <div class="curW">Visibilty : 4.51km</div>
-                <div class="curW">UV Index : Lowest</div>
                 <div class="curW">Pressure : 1013hPa</div>
+                <div class="curW">Longitude:28.6519°N</div>
+                <div class="curW">Latitude : 77.2314°E</div>
             </div>
         </div>
         <div id="plot">
             <div class="stext">Hourly Forecast</div>
             <div id="hourly">
-                <div class="hCards" id="hcard1">Now <br><img src="resc/sunny.png" alt="" class="icoimg"> <br>23° C</div>
-                <div class="hCards" id="hcard2"><div id="hcard2"></div>1 PM <br><img src="resc/sunny.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard3"><div id="hcard3"></div>2 PM <br><img src="resc/sunny.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard4"><div id="hcard4"></div>3 PM <br><img src="resc/sunny.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard5"><div id="hcard5"></div>4 PM <br><img src="resc/sunny.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard6"><div id="hcard6"></div>5 PM <br><img src="resc/sunny.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard7"><div id="hcard7"></div>6 PM <br><img src="resc/clouds-and-sun.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard8"><div id="hcard8"></div>7 PM <br><img src="resc/clouds-and-sun.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard9"><div id="hcard9"></div>8 PM <br><img src="resc/clouds-and-sun.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard10"><div id="hcard10"></div>9 PM <br><img src="resc/night.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard11"><div id="hcard11"></div>10 PM <br><img src="resc/night.png" alt="" class="icoimg"><br>23° C</div>
-                <div class="hCards" id="hcard12"><div id="hcard12"></div>11 PM <br><img src="resc/night.png" alt="" class="icoimg"><br>23° C</div>
+                <!-- will populate through javascript -->
             </div>
             <div  id="sPanel">
-                <div class="curW">Sunrise : 6:04 AM</div>
-                <div class="curW">Sunset : 7:32 PM</div>
-                <div class="curW">Moonrise : 4:36 PM</div>
-                <div class="curW">Moonset : 3:07 AM</div>
-                <div class="curW">Moonphase : Waning Gibbous</div>
+              <div class="curW " id="sunrise">Sunrise (UTC): <span id="sunrise-time"></span></div>
+              <div class="curW"  id="sunset">Sunset (UTC): <span id="sunset-time"></span></div>
+              <div class="curW"  id="solar-noon">Noon Time (UTC): <span id="solar-noon-time"></span></div>
+              <div class="curW"  id="day-length">Day Length : <span id="day-length-time"></span></div>
+              <div class="curW"  id="twilight-begin">Twilight Beginning Time (UTC): <span id="twilight-begin-time"></span></div>              
             </div>
         </div>
         <div id="fdays">
@@ -94,102 +83,54 @@
                 <span class="cday">Today</span>
                 <span class="cdate"> 14 Feb</span>
                 <img src="resc/sunny.png" alt="" class="icoimg2">
-                <span class="caption">Sunny</span>
-                <span class="caption">Min Temp : 11° C</span>
-                <span class="caption">Max Temp : 24° C</span>
+                <span class="caption-description">Sunny</span>
+                <span class="caption-min-temp">Min Temp : 11° C</span>
+                <span class="caption-max-temp">Max Temp : 24° C</span>
               </div>
               <div>
                 <span class="cday">Wednesday</span>
                 <span class="cdate"> 15 Feb</span>
                 <img src="resc/sunny.png" alt="" class="icoimg2">
-                <span class="caption">Sunny</span>
-                <span class="caption">Min Temp : 11° C</span>
-                <span class="caption">Max Temp : 24° C</span>
+                <span class="caption-description">Sunny</span>
+                <span class="caption-min-temp">Min Temp : 11° C</span>
+                <span class="caption-max-temp">Max Temp : 24° C</span>
               </div>
 
               <div>
                 <span class="cday">Thursday</span>
                 <span class="cdate"> 16 Feb</span>
                 <img src="resc/sunny.png" alt="" class="icoimg2">
-                <span class="caption">Sunny</span>
-                <span class="caption">Min Temp : 11° C</span>
-                <span class="caption">Max Temp : 24° C</span>
+                <span class="caption-description">Sunny</span>
+                <span class="caption-min-temp">Min Temp : 11° C</span>
+                <span class="caption-max-temp">Max Temp : 24° C</span>
               </div>
 
               <div>
                 <span class="cday">Friday</span>
                 <span class="cdate"> 17 Feb</span>
                 <img src="resc/sunny.png" alt="" class="icoimg2">
-                <span class="caption">Sunny</span>
-                <span class="caption">Min Temp : 11° C</span>
-                <span class="caption">Max Temp : 24° C</span>
+                <span class="caption-description">Sunny</span>
+                <span class="caption-min-temp">Min Temp : 11° C</span>
+                <span class="caption-max-temp">Max Temp : 24° C</span>
               </div>
 
               <div>
                 <span class="cday">Saturday</span>
                 <span class="cdate"> 18 Feb</span>
                 <img src="resc/sunny.png" alt="" class="icoimg2">
-                <span class="caption">Sunny</span>
-                <span class="caption">Min Temp : 11° C</span>
-                <span class="caption">Max Temp : 24° C</span>
+                <span class="caption-description">Sunny</span>
+                <span class="caption-min-temp">Min Temp : 11° C</span>
+                <span class="caption-max-temp">Max Temp : 24° C</span>
+              </div>
+              <div>
+                <span class="cday">Sunday</span>
+                <span class="cdate"> 19 Feb</span>
+                <img src="resc/sunny.png" alt="" class="icoimg2">
+                <span class="caption-description">Sunny</span>
+                <span class="caption-min-temp">Min Temp : 11° C</span>
+                <span class="caption-max-temp">Max Temp : 24° C</span>
               </div>
             </div>
         </div>
-
-
-
-    
-
-
-
-
-    <script>
-        function updateClock() {
-          var now = new Date();
-          var hours = now.getHours();
-          var minutes = now.getMinutes();
-          var seconds = now.getSeconds();
-          var ampm = hours >= 12 ? 'PM' : 'AM';
-          hours = hours % 12;
-          hours = hours ? hours : 12; // the hour '0' should be '12'
-          var timeString = hours + ':' + padZero(minutes) +' ' + ampm;
-          document.getElementById('clock').textContent = timeString;
-
-        //   document.getElementById('hcard1').textContent = String((hours+1)%12) +' ' + ;
-        //   document.getElementById('hcard2').textContent = String((hours+2)%12) +' ' + ampm+"\n 23° C";
-        //   document.getElementById('hcard3').textContent = String((hours+3)%12) +' ' + ampm+"\n 21° C";
-        //   document.getElementById('hcard4').textContent = String((hours+4)%12) +' ' + ampm+"\n 20° C";
-        //   document.getElementById('hcard5').textContent = String((hours+5)%12) +' ' + ampm+"\n 19° C";
-        //   document.getElementById('hcard6').textContent = String((hours+6)%12) +' ' + ampm+"\n 18° C";
-        //   document.getElementById('hcard7').textContent = String((hours+7)%12) +' ' + ampm+"\n 15° C";
-        //   document.getElementById('hcard8').textContent = String((hours+8)%12) +' ' + ampm+"\n 14° C";
-        //   document.getElementById('hcard9').textContent = String((hours+9)%12) +' ' + ampm+"\n 14° C";
-        //   document.getElementById('hcard10').textContent = String((hours+10)%12) +' ' + ampm+"\n 16° C";
-        //   document.getElementById('hcard11').textContent = String((hours+11)%12) +' ' + ampm+"\n 14° C";
-        //   document.getElementById('hcard12').textContent = String((hours+12)%12) +' ' + ampm+"\n 69420° C";
-        }
-    
-        function padZero(num) {
-          return (num < 10 ? '0' : '') + num;
-        }
-    
-        setInterval(updateClock, 1000); // Update the clock every second
-      </script>
-      <script>
-        function displayDayAndDate() {
-          var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-          var now = new Date();
-          var dayOfWeek = daysOfWeek[now.getDay()];
-          var dayOfMonth = now.getDate();
-          var month = now.getMonth() + 1; // add 1 since getMonth() returns 0-based values
-          var year = now.getFullYear();
-          var dateString = dayOfWeek + ', ' + dayOfMonth + '/' + month + '/' + year;
-          document.getElementById('day-and-date').textContent = dateString;
-        }
-    
-        window.onload = function() {
-          displayDayAndDate();
-        };
-      </script>
   </body>
 </html>

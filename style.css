@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    font-size: 62.5%;
+    font-size: 72.5%;
     text-decoration: none;
-
 }
+
+  
 
 
 /* Navbar  */
@@ -23,7 +24,7 @@
 
 /* Logo */
 #logo{
-    margin-left: 1vw;
+    margin-left: 2vw;
     display: flex;
     align-items: center;
 }
@@ -41,7 +42,7 @@
 
 #timeDate{
     font-size: 2.5rem;
-    margin-right: 3vw;
+    margin-right: 7vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,6 +105,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    
 }
 
 body h1{
@@ -130,7 +132,7 @@ body h1{
     width: 100vw;
     height: 40%;
     flex-wrap: wrap;
-     overflow-x: auto; 
+    overflow-x: auto;
 
 }
 
@@ -175,7 +177,7 @@ body h1{
     
 }
 
- #hourly{
+#hourly{
     /* border: 1px solid yellow; */
     height: 100%;
     width: 64%;
@@ -186,14 +188,14 @@ body h1{
     box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.36);
     
 }
-hourly::-webkit-scrollbar{
+ /* #hourly::-webkit-scrollbar{
     width: 50px;
-}
+}  */
 .hCards{
     /* border: 1px solid black; */
     min-width: 100px;
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -264,9 +266,9 @@ hourly::-webkit-scrollbar{
     box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.36); 
     /* border: 1px solid yellow; */
 }
- week::-webkit-scrollbar{
+/* #week::-webkit-scrollbar{
     width: 50px;
-}
+}  */
 
 #week div{
     min-width: 20%;
